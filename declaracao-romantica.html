@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Para o Amor da Minha Vida</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Playfair Display', serif;
+      background: linear-gradient(to right, #fce4ec, #fdf6f0);
+      color: #3a3a3a;
+      text-align: center;
+    }
+    .container {
+      padding: 50px 20px;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      color: #6d214f;
+    }
+    h2 {
+      font-size: 2em;
+      color: #9b59b6;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 1.5em;
+      max-width: 720px;
+      margin: 0 auto 20px;
+      line-height: 1.7;
+    }
+    .heart {
+      font-size: 3em;
+      color: #e74c3c;
+      animation: pulse 1.5s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+    .btn {
+      background-color: #9b59b6;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1em;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 30px;
+    }
+    .btn:hover {
+      background-color: #6d214f;
+    }
+    .photo-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .photo-gallery img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1.2s ease forwards;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+    .photo-gallery img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      margin-top: 50px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+      h2 {
+        font-size: 1.4em;
+      }
+      p {
+        font-size: 1.2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="heart">♥</div>
+    <h1>Para Minha Linda Namorada</h1>
+    <h2>Você é minha melhor escolha</h2>
+    <p>
+      Cada momento com você é como uma pequena eternidade de felicidade.<br><br>
+      Quando te conheci, descobri que o amor verdadeiro não é feito de grandes gestos, mas de pequenas atitudes cheias de carinho, de olhares que dizem tudo sem precisar de palavras, e da paz que só você sabe me dar.<br><br>
+      Você me faz querer ser alguém melhor todos os dias, só para merecer o amor que você me oferece com tanta doçura.<br><br>
+      Seu sorriso é o meu refúgio, seu abraço é o meu lar, e seu amor… é o presente mais lindo que a vida me deu.<br><br>
+      Hoje eu quero que você saiba: você é a minha melhor escolha.<br>
+      Meu amor, minha amiga, minha parceira.<br><br>
+      Obrigado por existir. Eu te amo para sempre.
+    </p>
+
+    <div class="photo-gallery">
+      <img src="BDA1EA3A-406B-431D-8668-81FFB38F6ED9.jpeg" alt="Foto 1">
+      <img src="C00A47D9-F697-43A5-99A0-93D10FDA549B.jpeg" alt="Foto 2">
+      <img src="82A1758B-2B65-42B8-9569-F57338AA25E3.jpeg" alt="Foto 3">
+    </div>
+
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/pOI00vALRiU?autoplay=1&loop=1&playlist=pOI00vALRiU"
+              allow="autoplay; encrypted-media"
+              allowfullscreen>
+      </iframe>
+    </div>
+
+    <button class="btn" onclick="window.open('https://youtu.be/pOI00vALRiU?si=p29rMWcCGBHhvSRw', '_blank')">Ouça nossa música</button>
+  </div>
+</body>
+</html>
